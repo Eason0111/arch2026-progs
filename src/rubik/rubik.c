@@ -78,7 +78,7 @@ static int solve(unsigned input_p, unsigned input_o)
         stack[depth].next_move = 0;
     }
 }
-/* Dummy: reports every state as invalid. Replace with the optimal solver. */
+/* Validate the state and write a shortest solution within the buffer. */
 int rubik_solve(const char *state, char *out, size_t cap)
 {
     for (size_t i = 0; i < RUBIK_STATE_LEN; i++) {
