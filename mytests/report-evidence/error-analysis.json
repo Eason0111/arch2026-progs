@@ -1,0 +1,45 @@
+{
+  "sqrt_positive_normals": 32512,
+  "sqrt_max_relative_error": 0.0038835098164954423,
+  "sqrt_worst_input": "0x81",
+  "mul_sample_exponent_fields": [
+    1,
+    32,
+    64,
+    126,
+    127,
+    128,
+    190,
+    222,
+    254
+  ],
+  "mul_pairs": 1327104,
+  "mul_normal_results": 999424,
+  "mul_normal_max_relative_error": [
+    0.007691841802434741,
+    [
+      "0x9e",
+      "0x3f51",
+      "0x80"
+    ]
+  ],
+  "mul_underflow_results": 144004,
+  "mul_underflow_max_relative_error": [
+    1.0,
+    [
+      "0x80",
+      "0x80",
+      "0x0"
+    ]
+  ],
+  "mul_overflow_results": 183676,
+  "fixed_pairs": 100144,
+  "fixed_mismatches": 0,
+  "fixed_wrapped_results": 99590,
+  "fixed_max_rounding_error_stored_units": 0.5,
+  "fixed_max_rounding_error_real_units": 4.76837158203125e-07,
+  "source_sha256": {
+    "src/bf16/bf16.c": "46986fbad3961010933c62c03887fe0529e5d18ef0bac9837bed28be8c2f817b",
+    "src/fixed/fixed.c": "9e181f80f0fdc4a21db328ddec4366f46fea6389bb50a4cf647abd2fe1b17007"
+  }
+}

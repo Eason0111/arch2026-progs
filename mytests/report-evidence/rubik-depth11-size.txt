@@ -1,0 +1,15 @@
+build/rubik/impl_asm.o  :
+section               size   addr
+.text                 1440      0
+.rodata              99912      0
+.data                    0      0
+.bss                   107      0
+.riscv.attributes       35      0
+.debug_aranges          32      0
+.debug_info             53      0
+.debug_abbrev           33      0
+.debug_line           2037      0
+.debug_str              73      0
+Total               103722
+
+

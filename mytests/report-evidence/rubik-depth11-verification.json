@@ -1,0 +1,8 @@
+{
+  "cases": 2644,
+  "correct": 2644,
+  "over_budget": 0,
+  "max_instructions": 7440266,
+  "worst_state": "54721631111111",
+  "failures": []
+}

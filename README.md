@@ -38,7 +38,8 @@ see the commit messages and report for the development record.
 - `.ci/`, `.github/`: automated checks and GitHub Actions.
 - `results/`: generated measurements; CSV, Markdown and charts are not tracked.
 - `build/`, `third_party/`: generated binaries and fetched emulator, not tracked.
-- `mytests/`: local experiments and evidence, currently not published in this fork.
+- [mytests/report-evidence/](mytests/report-evidence/): published report data and
+  reproduction scripts; other local experiments remain unpublished.
 
 The instructor-provided framework, license and contribution guide are retained.
 The short implementation filenames follow the assignment's conventions. Historical

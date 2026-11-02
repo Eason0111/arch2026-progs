@@ -1,0 +1,9 @@
+{
+  "/home/eason/arch2026-progs/src/rubik/rubik.S": "40881b26a64cf70ab7be31a8f479fe615dd1b38169ca3cce73b27c87c90aca41",
+  "/home/eason/arch2026-progs/src/rubik/rubik_tables.inc": "b5d78ea580ac02d3ca4c3d44b5a28c7a1f803199f698f033f7fbf1bbf2573bcd",
+  "/home/eason/arch2026-progs/src/rubik/rubik_distance11.inc": "29f8002aae56323845c8fcdb0d21d954f5458a9d4e76e582a7f162072785ec12",
+  "/home/eason/arch2026-progs/src/rubik/rubik_near5.inc": "bf3bbd04d532a91218fd9e9e5d62b2199a91ec31c61911f7fc44161d1c56d928",
+  "/home/eason/arch2026-progs/build/rubik/impl_asm.o": "19577a806bf9d396ecf0d94915dcd652180e00758cccef68b1c783ccc23ff80c",
+  "/home/eason/arch2026-progs/mytests/near5-final-20261101-203848/probe.elf": "9d7157b0d3ce310688eb47efffefa0fa447f4d9df13357cbc590e1492713ea19",
+  "/home/eason/hw2-submission-audit-q2bjvtq3/trusted/third_party/rv32emu/build/rv32emu": "5577462605f286d456524cf1ded1cb51a6ed66b7339e9e067dad334770550154"
+}
