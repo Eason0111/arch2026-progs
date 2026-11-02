@@ -1,5 +1,52 @@
 # arch2026-progs
 
+## Homework submission guide
+
+This fork contains the completed C and RV32I assembly implementations for
+Assignment 2. The original framework documentation follows this guide.
+
+- [English report on HackMD](https://hackmd.io/@Eason0111/SynTumUaMx)
+- [Validated implementation revision](https://github.com/Eason0111/arch2026-progs/tree/e14903125b39b2e58b96be60f1494d0149e1e754)
+- [Validation run](https://github.com/Eason0111/arch2026-progs/actions/runs/41466076945)
+
+The linked revision scored 100/100 in the public grader. Report, interview,
+and submission requirements are separate from that automated score.
+Implementation, debugging and report preparation received AI assistance;
+see the commit messages and report for the development record.
+
+| Task | C implementation | RV32I implementation | Contract |
+|---|---|---|---|
+| Rubik shortest solution | [rubik.c](src/rubik/rubik.c) | [rubik.S](src/rubik/rubik.S) | [rubik.h](src/rubik/rubik.h) |
+| Binary GCD | [gcd.c](src/gcd/gcd.c) | [gcd.S](src/gcd/gcd.S) | [gcd.h](src/gcd/gcd.h) |
+| BFloat16 | [bf16.c](src/bf16/bf16.c) | [bf16.S](src/bf16/bf16.S) | [bf16.h](src/bf16/bf16.h) |
+| Logic and fixed point | [fixed.c](src/fixed/fixed.c) | [fixed.S](src/fixed/fixed.S) | [fixed.h](src/fixed/fixed.h) |
+
+### Rubik lookup data
+
+| File | Purpose |
+|---|---|
+| [rubik_transition_tables.h](src/rubik/rubik_transition_tables.h) | C move transitions, projected distances and move metadata |
+| [rubik_transition_tables.inc](src/rubik/rubik_transition_tables.inc) | Assembly version of the same data; linked independently from C |
+| [rubik_distance_up_to_5.inc](src/rubik/rubik_distance_up_to_5.inc) | Packed shortest-path records for states within five moves |
+| [rubik_distance_11_states.inc](src/rubik/rubik_distance_11_states.inc) | Sorted keys identifying states at distance eleven |
+
+### Repository layout
+
+- `src/`: the four implementations, their contracts and required lookup data.
+- `tests/`, `common/`: instructor tests and bare-metal runtime.
+- `scripts/`, `mk/`, `tools/`, `Makefile`: build, validation and commit-chain tools.
+- `.ci/`, `.github/`: automated checks and GitHub Actions.
+- `results/`: generated measurements; CSV, Markdown and charts are not tracked.
+- `build/`, `third_party/`: generated binaries and fetched emulator, not tracked.
+- `mytests/`: local experiments and evidence, currently not published in this fork.
+
+The instructor-provided framework, license and contribution guide are retained.
+The short implementation filenames follow the assignment's conventions. Historical
+report links remain pinned to the measured revision; lookup-file renaming does not
+change the algorithms or table contents.
+
+## Original framework documentation
+
 Grading framework for [Assignment 2: Complete Applications](https://hackmd.io/@sysprog/2026-arch-homework2).
 Four bare-metal RV32I programs run on [rv32emu](https://github.com/sysprog21/rv32emu) in system emulation, each
 with a C version, a hand-written assembly version and a micro-test suite. The repository holds the Makefile, the

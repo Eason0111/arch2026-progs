@@ -1,4 +1,4 @@
-    .include "src/rubik/rubik_near5.inc"
+    .include "src/rubik/rubik_distance_up_to_5.inc"
 # Port of Homework 1 commit 25321b6 with exact endgame lookup tables.
 # Adapter: save registers, accept arguments, and format bounded output.
 # Parsing: s0=p, s1=o, s2=input; s3-s5 are scratch.
@@ -512,8 +512,8 @@ rubik_solve_asm:
 
     .size   rubik_solve_asm, .-rubik_solve_asm
 
-    .include "src/rubik/rubik_tables.inc"
-    .include "src/rubik/rubik_distance11.inc"
+    .include "src/rubik/rubik_transition_tables.inc"
+    .include "src/rubik/rubik_distance_11_states.inc"
     .section .rodata
     .balign 4
 move_names:

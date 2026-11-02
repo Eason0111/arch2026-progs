@@ -1,5 +1,5 @@
 #include "rubik.h"
-#include "rubik_tables.h"
+#include "rubik_transition_tables.h"
 #define MOVES 9
 
 typedef struct {
