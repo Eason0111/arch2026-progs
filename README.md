@@ -6,8 +6,8 @@ This fork contains the completed C and RV32I assembly implementations for
 Assignment 2. The original framework documentation follows this guide.
 
 - [English report on HackMD](https://hackmd.io/@Eason0111/SynTumUaMx)
-- [Validated implementation revision](https://github.com/Eason0111/arch2026-progs/tree/e14903125b39b2e58b96be60f1494d0149e1e754)
-- [Validation run](https://github.com/Eason0111/arch2026-progs/actions/runs/41466076945)
+- [Validated implementation revision](https://github.com/Eason0111/arch2026-progs/tree/8a924bb0cc4fab6d95f3c2ae273bf560b464c24e)
+- [Validation run](https://github.com/Eason0111/arch2026-progs/actions/runs/41475567280)
 
 The linked revision scored 100/100 in the public grader. Report, interview,
 and submission requirements are separate from that automated score.
